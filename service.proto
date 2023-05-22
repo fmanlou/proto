@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package data;
+
+import "data.proto";
+
+service RealtimeService {
+    rpc sendValue(Empty) returns (stream Value);
+}
