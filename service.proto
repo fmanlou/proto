@@ -6,4 +6,5 @@ import "data.proto";
 
 service RealtimeService {
     rpc sendValue(Empty) returns (stream Value);
+    rpc getId(Index) returns (Id);
 }

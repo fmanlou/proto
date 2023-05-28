@@ -2,6 +2,14 @@ syntax = "proto3";
 
 package data;
 
+message Index {
+    int32 index = 1;
+}
+
+message Id {
+    string Id = 1;
+}
+
 message Value {
     int32 index = 1;
     int32 value = 2;
